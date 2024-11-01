@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+#maindiv{width: 50vw;
+    height: 60vh;
+    border: 2px solid red;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    width: 300px; /* Increased width */
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+#inp{
+    width: 40vw;
+    text-align: center;
+}
+#inp:hover{
+    background-color: #28a745;
+    opacity: 0.3;
+    border: 2px solid  #0056b3;
+}
+#inp:focus{
+
+    background-color: #007BFF;
+    opacity: 0.2;
+
+}
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#heading{
+    text-align: center;
+    color: #28a745;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+#todos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.todo {
+    width: 220px;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.todo:hover {
+    transform: translateY(-3px);
+}
+
+.todo p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.todo button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #28a745; /* Green for update */
+}
+
+.todo button:nth-child(2) {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.todo button:hover {
+    background-color: #0056b3;
+}
